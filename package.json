@@ -1,0 +1,19 @@
+{
+  "name": "requirejs-transpiler",
+  "version": "0.0.1",
+  "description": "transpile requirejs to es module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "babel-generator": "^6.24.1",
+    "babel-traverse": "^6.24.1",
+    "babel-types": "^6.24.1",
+    "babylon": "^6.17.2",
+    "glob": "^7.1.2"
+  }
+}
