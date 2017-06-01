@@ -1,4 +1,6 @@
 import $ from "jquery";
 export default {
-  init: function () {}
+  init: function () {
+    var o = $('#app');
+  }
 };

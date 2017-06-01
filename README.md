@@ -1,6 +1,36 @@
 # requirejs-transpiler
 transpile requirejs to ES Module
 
+# Compiled Output
+
+An example like this:
+
+```js
+  define(
+    [
+      'jquery'
+    ],
+    function ($) {
+      return {
+        init: function () {
+          var o = $('#app');
+        }
+      };
+    }
+  );
+```
+
+and the output will be:
+
+```js
+  import $ from "jquery";
+  export default {
+    init: function () {
+      var o = $('#app');
+    }
+  };
+```
+
 # Usage
 
 Install:
@@ -24,8 +54,10 @@ Install:
 
 ## Options
 
-| Option | Required | 
-| ------------- | ------------- | 
+The glob syntax from the glob module is used at *srcPattern* param.
+
+| Option | Required |
+| ------------- | ------------- |
 | srcBasePath | true |
 | srcPattern | false |
 | distBasePath | false |

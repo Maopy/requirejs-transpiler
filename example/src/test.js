@@ -5,7 +5,7 @@ define(
     function ($) {
         return {
             init: function () {
-                
+                var o = $('#app');
             }
         };
     }
