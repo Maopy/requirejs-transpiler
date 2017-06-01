@@ -1,14 +1,20 @@
 {
   "name": "requirejs-transpiler",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "transpile requirejs to es module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index"
+    "start": "node index",
+    "example": "node example"
   },
-  "author": "",
+  "author": "Maopy",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maopy/requirejs-transpiler.git"
+  },
+  "git": "https://github.com/Maopy/requirejs-transpiler",
   "dependencies": {
     "babel-generator": "^6.24.1",
     "babel-traverse": "^6.24.1",
