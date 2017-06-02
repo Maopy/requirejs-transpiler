@@ -90,7 +90,7 @@ module.exports = function (options) {
 
     let output = generate(esFile).code
     
-    writeFileSync(`${distBasePath}${fileTailPath}.ast`, JSON.stringify(ast))
+    // writeFileSync(`${distBasePath}${fileTailPath}.ast`, JSON.stringify(ast))
     writeFileSync(`${distBasePath}${fileTailPath}.js`, output)
   })
 }
