@@ -42,9 +42,9 @@ Install:
 ## API
 
 ```js
-  const { requirejs-transpiler } = require('requirejs-transpiler')
+  const { transpile } = require('requirejs-transpiler')
 
-  requirejs-transpiler({  // options
+  transpile({  // options
     srcBasePath,
     srcPattern,
     distBasePath,
